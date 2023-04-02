@@ -53,6 +53,8 @@ public class Createoppurtunitywithcontacts_Test {
 		driver.findElement(By.linkText("Origin")).click();
 		wutil.switchToWindow(driver, "Potentials");
 		
+		WebElement date = driver.findElement(By.name("closingdate"));
+		date.sendKeys("2023-05-20");
 		
 		WebElement element = driver.findElement(By.name("sales_stage"));
 		element.click();
