@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practise.CheckBoxes">
+      <class name="practise.OrganizationNames">
         <methods>
-          <include name="checkAll"/>
+          <include name="orgName"/>
         </methods>
-      </class> <!-- practise.CheckBoxes -->
+      </class> <!-- practise.OrganizationNames -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

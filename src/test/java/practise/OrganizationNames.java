@@ -38,10 +38,10 @@ public class OrganizationNames {
 		 
 		List<WebElement> orgnames = driver.findElements(By.xpath("//table[@class='lvt small']/tbody/tr[*]/td[3]"));
 		
-		for(WebElement orgname:orgnames)
+		for(int i=1;i<orgnames.size();i++)
 		{
-			String org = orgname.getText();
-			System.out.println(org);
+			String orgname=orgnames.get(i).getText();
+			System.out.println(orgname);
 		}
 		
 		driver.quit();
