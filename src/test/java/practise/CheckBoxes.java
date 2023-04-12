@@ -36,8 +36,12 @@ public class CheckBoxes {
 		 
 		 driver.findElement(By.linkText("Organizations")).click();
 		 
-		WebElement checkbox = driver.findElement(By.xpath("//table[@class='lvt small']/tbody/tr[*]/td/input[@type='checkbox']"));
-		checkbox.click();
+		List<WebElement> checkbox = driver.findElements(By.xpath("//table[@class='lvt small']/tbody/tr[*]/td/input[@type='checkbox']"));
+		
+		for(int i=1;i<=checkbox.size();i++)
+		{
+			checkbox.get(i).click();
+		}
 		
 		driver.quit();
 	}
