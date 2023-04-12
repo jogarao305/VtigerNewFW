@@ -31,7 +31,10 @@ public class CreateLeadTest {
 		String Password = pobj.getProperty("password");
 		String URL = pobj.getProperty("url");
 //		System.setProperty("webdriver.edge.driver", "D:\\selenium folder\\msedgedriver.exe");
-		WebDriver driver = new EdgeDriver();
+
+		ChromeOptions option = new ChromeOptions();
+		   option.addArguments("--remote-allow-origins=*");
+		WebDriver driver = new ChromeDriver(option);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get(URL);	

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-02T17:52:33 IST" name="Default suite" finished-at="2023-04-02T17:53:22 IST" duration-ms="49402">
+  <suite started-at="2023-04-11T19:23:56 IST" name="Default suite" finished-at="2023-04-11T19:24:10 IST" duration-ms="14553">
     <groups>
     </groups>
-    <test started-at="2023-04-02T17:52:33 IST" name="Default test" finished-at="2023-04-02T17:53:22 IST" duration-ms="49402">
-      <class name="leadsModule.Createoppurtunitywithcontacts_Test">
-        <test-method signature="opportunityWithContacts()[pri:0, instance:leadsModule.Createoppurtunitywithcontacts_Test@59af0466]" started-at="2023-04-02T17:52:33 IST" name="opportunityWithContacts" finished-at="2023-04-02T17:53:22 IST" duration-ms="49211" status="PASS">
+    <test started-at="2023-04-11T19:23:56 IST" name="Default test" finished-at="2023-04-11T19:24:10 IST" duration-ms="14553">
+      <class name="practise.Check10">
+        <test-method signature="checkOne()[pri:0, instance:practise.Check10@3a6bb9bf]" started-at="2023-04-11T19:23:56 IST" name="checkOne" finished-at="2023-04-11T19:24:10 IST" duration-ms="14499" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- opportunityWithContacts -->
-      </class> <!-- leadsModule.Createoppurtunitywithcontacts_Test -->
+        </test-method> <!-- checkOne -->
+      </class> <!-- practise.Check10 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

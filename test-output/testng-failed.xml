@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="leadsModule.Createoppurtunitywithcontacts_Test">
+      <class name="practise.CheckBoxes">
         <methods>
-          <include name="opportunityWithContacts"/>
+          <include name="checkAll"/>
         </methods>
-      </class> <!-- leadsModule.Createoppurtunitywithcontacts_Test -->
+      </class> <!-- practise.CheckBoxes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
