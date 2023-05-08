@@ -24,6 +24,7 @@ public class CheckBoxes {
 		String URL = putil.readDataFromProperties("url");
 		String UserName = putil.readDataFromProperties("username");
 		String Password = putil.readDataFromProperties("password");
+		System.setProperty("webdriver.chrome.driver", "H:\\selenium\\chromedriver.exe");
 		ChromeOptions option = new ChromeOptions();
 		 option.addArguments("--remote-allow-origins=*");
 		 WebDriver driver = new ChromeDriver(option);
@@ -38,7 +39,7 @@ public class CheckBoxes {
 		 
 		List<WebElement> checkbox = driver.findElements(By.xpath("//table[@class='lvt small']/tbody/tr[*]/td/input[@type='checkbox']"));
 		
-		for(int i=1;i<=checkbox.size();i++)
+		for(int i=1;i<checkbox.size();i++)
 		{
 			checkbox.get(i).click();
 		}

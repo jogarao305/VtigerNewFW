@@ -27,6 +27,15 @@ public class CreateOpportunityPage extends WebDriverUtilities {
 	
 	@FindBy(name = "search")
 	private WebElement searchBtn;
+	
+	@FindBy(xpath = "//input[@value='T']")
+	private WebElement AssignRadioBtn;
+	
+	@FindBy(name = "assigned_group_id")
+	private WebElement Assign_dropdown;
+	
+	@FindBy(name = "amount")
+	private WebElement AmountEdt;
 
 	public CreateOpportunityPage(WebDriver driver) {
 		PageFactory.initElements(driver,this);
@@ -55,6 +64,18 @@ public class CreateOpportunityPage extends WebDriverUtilities {
 	public WebElement getSearchBtn() {
 		return searchBtn;
 	}
+	
+	public WebElement getAssignRadioBtn() {
+		return AssignRadioBtn;
+	}
+
+	public WebElement getAssign_dropdown() {
+		return Assign_dropdown;
+	}
+
+	public WebElement getAmountEdt() {
+		return AmountEdt;
+	}
 
 	/**
 	 * This method create the new opportunity 
@@ -73,6 +94,30 @@ public class CreateOpportunityPage extends WebDriverUtilities {
 		switchToWindow(driver, "Potentials");
 		selectByVisibleText(salesstage, sales_stageDropdwon);
 		saveBtn.click();
+	}
+	
+	/**
+	 * This method creates the contact name with the all the required as well as non-required fields
+	 * @param oppName
+	 * @param driver
+	 * @param orgName
+	 * @param SalesStage
+	 * @param Amount
+	 * @param assign
+	 */
+	public void createOpportunity(String oppName, WebDriver driver, String orgName, String SalesStage, String Amount, String assign) {
+		opportunityNameEdt.sendKeys(oppName);
+		organisationEdt.click();
+		switchToWindow(driver, "Accounts");
+		searchbox.sendKeys(orgName);
+		searchBtn.click();
+		driver.findElement(By.xpath("//a[text()='"+orgName+"']")).click();
+		switchToWindow(driver, "Potentials");
+		AmountEdt.sendKeys(Amount);
+		selectByVisibleText(SalesStage, sales_stageDropdwon);
+		AssignRadioBtn.click();
+		selectByVisibleText(assign, Assign_dropdown);
+		
 	}
 
 }

@@ -1,4 +1,4 @@
-package leadsModule;
+package opportunitiesModule;
 
 import java.io.IOException;
 import java.time.Duration;
