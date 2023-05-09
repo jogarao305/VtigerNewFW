@@ -5,7 +5,13 @@
     <classes>
       <class name="opportunitiesModule.Create_NewOpportunity">
         <methods>
+          <include name="asConfig"/>
+          <include name="amConfig"/>
           <include name="createOpportunity"/>
+          <include name="bmConfig"/>
+          <include name="bcConfig"/>
+          <include name="acConfig"/>
+          <include name="bsConfig"/>
         </methods>
       </class> <!-- opportunitiesModule.Create_NewOpportunity -->
     </classes>
