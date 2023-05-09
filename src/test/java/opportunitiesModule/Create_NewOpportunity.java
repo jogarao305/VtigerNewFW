@@ -58,8 +58,7 @@ public class Create_NewOpportunity extends BaseClass {
 	   op1.createOpportunitiesPage();
 	  //Creating new Opportunity with description and saving it 
 	   CreateOpportunityPage cop = new CreateOpportunityPage(driver);
-	   cop.createOpportunity(OppName+jutil.getRandomNumber(), driver, OrgName, Sales_Stage, Amount, Assign);
-	   
+	   cop.createOpportunity(OppName+jutil.getRandomNumber(), driver, OrgName, Sales_Stage, Amount, Assign);  
 	   driver.findElement(By.xpath("//textarea[@class='detailedViewTextBox']")).sendKeys(Desc);
 	   cop.getSaveBtn().click();
 	   //Verifying the opportunity name
