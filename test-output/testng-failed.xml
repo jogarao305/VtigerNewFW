@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="opportunitiesModule.Create_NewOpportunity">
+      <class name="opportunitiesModule.Opportunity_Calendar">
         <methods>
           <include name="asConfig"/>
           <include name="amConfig"/>
-          <include name="createOpportunity"/>
           <include name="bmConfig"/>
           <include name="bcConfig"/>
+          <include name="calendar_Opportunity"/>
           <include name="acConfig"/>
           <include name="bsConfig"/>
         </methods>
-      </class> <!-- opportunitiesModule.Create_NewOpportunity -->
+      </class> <!-- opportunitiesModule.Opportunity_Calendar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

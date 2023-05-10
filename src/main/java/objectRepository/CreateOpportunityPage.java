@@ -87,13 +87,13 @@ public class CreateOpportunityPage extends WebDriverUtilities {
 	public void createOpporunities(String oppName, WebDriver driver,String orgName, String salesstage)
 	{
 		opportunityNameEdt.sendKeys(oppName);
+		organisationEdt.click();
 		switchToWindow(driver, "Accounts");
 		searchbox.sendKeys(orgName);
 		searchBtn.click();
 		driver.findElement(By.xpath("//a[text()='"+orgName+"']")).click();
 		switchToWindow(driver, "Potentials");
 		selectByVisibleText(salesstage, sales_stageDropdwon);
-		saveBtn.click();
 	}
 	
 	/**
